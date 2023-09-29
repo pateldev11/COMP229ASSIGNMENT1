@@ -1,24 +1,28 @@
-// routes/index.js
-const express = require('express');
-const router = express.Router();
+var express = require('express');
+var router = express.Router();
 
-// Home page
-router.get('/', (req, res) => {
+/* GET home page. */
+router.get('/', function(req, res, next) {
   res.render('home');
 });
 
-// About page
-router.get('/about', (req, res) => {
+router.get('/about', function(req, res, next) {
   res.render('about');
 });
 
-// Contact page
-router.get('/contact', (req, res) => {
+router.get('/projects', function(req, res, next) {
+  res.render('project');
+});
+
+router.get('/services', function(req, res, next) {
+  res.render('services');
+});
+
+router.get('/contact', function(req, res, next) {
   res.render('contact');
 });
 
-router.get('/services',(req, res) => {
-  res.render('services');
-});
+
+
 
 module.exports = router;

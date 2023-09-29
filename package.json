@@ -1,6 +1,6 @@
 {
-  "name": "myportfolio",
-  "version": "1.0.1",
+  "name": "comp229assignment1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node server.js"
@@ -12,9 +12,5 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  },
-  "description": "website",
-  "devDependencies": {},
-  "author": "devpatel",
-  "license": "ISC"
+  }
 }
