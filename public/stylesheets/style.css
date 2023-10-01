@@ -1,143 +1,263 @@
 /* Reset some default styles */
-body, h1, h2, p {
+body, h1, h2, h3, p, ul, li, form {
   margin: 0;
   padding: 0;
 }
 
-/* Global styles */
+/* Black and White theme */
 body {
   font-family: Arial, sans-serif;
-  background-color:black;
-  color: white;
-}
-.logo img{
-  width: 180px;
+  background-image: url('/images/back.gif');
+    background-size: cover; /* Dark background color */
+  color: #fff; /* White text */
+  text-align: center; /* Center-align the entire page content */
 }
 
+/* Header styles */
 header {
-  background-image:linear-gradient(black,black);
-  color: #fff;
-  padding: 5px 0;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ /* Dark header background */
+
+  padding: 20px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Increased box-shadow for a 3D effect */
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  padding-bottom:25px;
-
+.logo h1 {
+  font-size: 24px;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
+  list-style-type: none;
 }
 
-nav li {
-  margin: 0 100px;
-  opacity: 70%;
-  background-color:black;
-  color:sandybrown;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: violet;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 30px;
- 
-}
-
-nav li:hover {
-  background-color:violet;
-}
-nav a:hover{
-  color: black;
-}
-
-main {
-  max-width: 960px;
-  margin: auto;
-  padding: 15px;
-
-
-}
-
-/* Elaborate home page styles */
-.welcome {
-  width: 100%;
-  height: min-content;
-  text-align: center;
-  padding: 20px 0;
-  background-image: url('/images/bg.jpeg');
-  color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-}
-.welcome h1 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.welcome p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-top: 10px;
-}
-.btn{
-  width: max-content;
-  padding: 16px;
-  border-radius: 25px;
-  color:black;
-  opacity: 75%;
-  margin-top: 25px;
-  margin-left: 45%;
-  text-decoration: none;
-  background-color: violet;
-  display: block;
+nav ul li {
+  display: inline;
   justify-content: center;
-
+  padding: 25px;
+  margin-right: 20px;
+  transition: transform 0.3s;
 }
-.btn:hover{
-  opacity: 100%;
-  font-size: large;
-  font-weight: 800;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color:white;
+
+nav ul li a {
+background-color: purple;
+  text-decoration: none;
   color: violet;
+  font-size: large;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding:10px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-/* Add more over-the-top styles as desired */
+nav ul li a:hover {
+  color: black;
+  background-color: goldenrod;
+  width: max-content;
+  
+}
+
+/* Smooth transition on hover */
+nav ul li:hover {
+  transform: translateY(-2px);
+}
+
+/* About section styles */
 .about {
-  text-align: center;
-  padding: 40px 0;
-  background: linear-gradient(45deg, #ff9800, #ff5722);
-  color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-}
 
-.about img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin: 20px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #1a1a1a; /* Slightly lighter background color */
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 1px dotted #333; /* Darker border */
 }
 
 .about h2 {
+
+color: #000;
   font-size: 30px;
-  font-weight: bold;
+  margin-bottom: 20px;
+
 }
 
 .about p {
   font-size: 18px;
-  line-height: 1.5;
+  margin-bottom: 20px;
+   /* Lighter text color */
+}
+
+.about img {
+  max-width: 760px;
+  height:450px ;
+  border-radius: 50px;
   margin-top: 20px;
+  border: 10px double  #333; /* Darker border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Enhanced box-shadow for a 3D effect */
+  transition: transform 0.3s;
+}
+
+.about img:hover {
+  transform: scale(1.05);
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #007BFF;
+}
+
+/* Portfolio section styles */
+.portfolio {
+  background-color: #1a1a1a; /* Slightly lighter background color */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Enhanced button styles */
+.button {
+  display: inline-block;
+  padding: 15px 30px; /* Increased padding for a larger button */
+  background-color: #000; /* Dark button background color */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for a 3D effect */
+}
+
+.button:hover {
+  background-color: #333; /* Slightly darker background on hover */
+  transform: translateY(-2px) scale(1.05); /* Enhanced 3D effect on hover */
+}
+
+/* Project Styles */
+.project {
+  background-color: #292929; /* Slightly darker background color */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Increased box-shadow for a stronger 3D effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Enhanced box-shadow on hover */
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.project p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project a:hover {
+  color: #0056b3;
+}
+
+/* Contact section styles */
+.contact {
+  background-color: #292929; /* Slightly darker background color */
+  padding: 60px 0;
+  text-align: center;
+  border-top: 1px solid #333; /* Darker border */
+}
+
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #666; /* Darker border */
+  border-radius: 5px;
+  background-color: #1a1a1a; /* Slightly lighter background color */
+  color: #fff;
+}
+
+.contact-form button {
+  display: inline-block;
+  padding: 15px 30px; /* Increased padding for a larger button */
+  background-color: #000; /* Dark button background color */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for a 3D effect */
+}
+
+.contact-form button:hover {
+  background-color: #333; /* Slightly darker background on hover */
+  transform: translateY(-2px) scale(1.05); /* Enhanced 3D effect on hover */
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.social-links a {
+  font-size: 24px;
+  margin: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #007BFF;
+}
+.logo img{
+  width: 130px;
+}
+.hero h1{
+background-color: #fff;
+color: #292929;
+font-size: larger;
+font-style: italic;
+font-family: monospace;
 }
