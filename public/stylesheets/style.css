@@ -1,263 +1,221 @@
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, li, form {
+body, h1, h2, p {
   margin: 0;
   padding: 0;
 }
 
-/* Black and White theme */
+/* Basic styling */
 body {
-  font-family: Arial, sans-serif;
-  background-image: url('/images/back.gif');
-    background-size: cover; /* Dark background color */
-  color: #fff; /* White text */
-  text-align: center; /* Center-align the entire page content */
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
 }
 
-/* Header styles */
 header {
- /* Dark header background */
-
-  padding: 20px;
-  transition: background-color 0.3s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Increased box-shadow for a 3D effect */
+  background-image: url('/images/back.gif');
+  color: #fff;
+  padding: 20px 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.logo h1 {
-  font-size: 24px;
+nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  perspective: 1000px; /* Set a perspective value to create a 3D effect */
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
+  display: flex;
+  transform-style: preserve-3d; /* Allow child elements to be transformed in 3D space */
 }
 
-nav ul li {
-  display: inline;
-  justify-content: center;
-  padding: 25px;
+nav li {
   margin-right: 20px;
-  transition: transform 0.3s;
+  transform: rotateX(15deg) rotateY(0deg) rotateZ(0deg); /* Apply 3D transformations */
+  transition: transform 0.3s ease;
 }
 
-nav ul li a {
-background-color: purple;
+nav li:hover {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); /* Reset rotations on hover */
+}
+
+
+nav a {
   text-decoration: none;
-  color: violet;
-  font-size: large;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding:10px;
-  border-radius: 15px;
+  color: #fff;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: black;
-  background-color: goldenrod;
-  width: max-content;
-  
+nav a:hover {
+  color:orangered;
+  background-color: #f9f9f9; /* Change to your desired hover color */
 }
 
-/* Smooth transition on hover */
-nav ul li:hover {
-  transform: translateY(-2px);
-}
-
-/* About section styles */
-.about {
-
-  color: #1a1a1a; /* Slightly lighter background color */
-  padding: 60px 0;
+.hero {
   text-align: center;
-  border-bottom: 1px dotted #333; /* Darker border */
+  padding: 150px 0;
+  background-image: url('/images/hero.gif');
+  background-size: cover;
+  background-position: center;
+  color:lightblue;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color:whitesmoke;
+  color:gray;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: lightblue;
+  color: #333;
+}
+
+.mission {
+  background-color:black;
+  color: lightblue;
+  text-align: center;
+  padding: 50px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.mission h2 {
+  font-size: 36px;
+  color: lightblue;
+  margin-bottom: 20px;
+}
+
+.mission p {
+  font-size: 18px;
+  color: lightblue;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f9f9f9);
+  z-index: -1;
+}
+
+footer {
+  
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .hero {
+      padding: 100px 0;
+  }
+  .hero h1 {
+      font-size: 36px;
+  }
+  .hero p {
+      font-size: 18px;
+  }
+  .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+  }
+}
+.about {
+  background-color:black;
+  padding: 100px 0;
+  text-align: center;
 }
 
 .about h2 {
-
-color: #000;
-  font-size: 30px;
-  margin-bottom: 20px;
-
+  font-size: 36px;
+  color: lightblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+  transform: translateX(50px); /* Initial X-axis translation for animation */
+  opacity: 0; /* Initial opacity for animation */
+  animation: slideIn 1s ease forwards;
 }
 
-.about p {
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  width: 550px;
+  height: 450px;
+  background-color: aliceblue;
+  border-radius: 25%;
+  margin-right: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(50px); /* Initial Y-axis translation for animation */
+  opacity: 0; /* Initial opacity for animation */
+  animation: fadeInUp 1s ease 0.5s forwards;
+}
+
+.about-content p {
   font-size: 18px;
-  margin-bottom: 20px;
-   /* Lighter text color */
+  color: #666;
+  max-width: 600px;
+  margin: 0;
+  transform: translateY(50px); /* Initial Y-axis translation for animation */
+  opacity: 0; /* Initial opacity for animation */
+  animation: fadeInUp 1s ease 1s forwards;
 }
 
-.about img {
-  max-width: 760px;
-  height:450px ;
-  border-radius: 50px;
-  margin-top: 20px;
-  border: 10px double  #333; /* Darker border */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Enhanced box-shadow for a 3D effect */
-  transition: transform 0.3s;
+/* Keyframes for animations */
+@keyframes slideIn {
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
 }
 
-.about img:hover {
-  transform: scale(1.05);
+@keyframes fadeInUp {
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
-.social-links a {
-  display: inline-block;
-  margin: 10px;
-  font-size: 24px;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
 
-.social-links a:hover {
-  color: #007BFF;
-}
 
-/* Portfolio section styles */
-.portfolio {
-  background-color: #1a1a1a; /* Slightly lighter background color */
-  padding: 60px 0;
-  text-align: center;
-}
-
-.portfolio h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-/* Enhanced button styles */
-.button {
-  display: inline-block;
-  padding: 15px 30px; /* Increased padding for a larger button */
-  background-color: #000; /* Dark button background color */
-  color: #fff; /* White text color */
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s; /* Added transform for a 3D effect */
-}
-
-.button:hover {
-  background-color: #333; /* Slightly darker background on hover */
-  transform: translateY(-2px) scale(1.05); /* Enhanced 3D effect on hover */
-}
-
-/* Project Styles */
-.project {
-  background-color: #292929; /* Slightly darker background color */
-  padding: 20px;
-  margin: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Increased box-shadow for a stronger 3D effect */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-}
-
-.project:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Enhanced box-shadow on hover */
-}
-
-.project h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.project p {
-  font-size: 16px;
-  color: #ccc;
-}
-
-.project a {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #007BFF;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.project a:hover {
-  color: #0056b3;
-}
-
-/* Contact section styles */
-.contact {
-  background-color: #292929; /* Slightly darker background color */
-  padding: 60px 0;
-  text-align: center;
-  border-top: 1px solid #333; /* Darker border */
-}
-
-.contact h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.contact-form label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #666; /* Darker border */
-  border-radius: 5px;
-  background-color: #1a1a1a; /* Slightly lighter background color */
-  color: #fff;
-}
-
-.contact-form button {
-  display: inline-block;
-  padding: 15px 30px; /* Increased padding for a larger button */
-  background-color: #000; /* Dark button background color */
-  color: #fff; /* White text color */
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s; /* Added transform for a 3D effect */
-}
-
-.contact-form button:hover {
-  background-color: #333; /* Slightly darker background on hover */
-  transform: translateY(-2px) scale(1.05); /* Enhanced 3D effect on hover */
-}
-
-.contact-info p {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #ccc;
-}
-
-.social-links a {
-  font-size: 24px;
-  margin: 10px;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.social-links a:hover {
-  color: #007BFF;
-}
-.logo img{
-  width: 130px;
-}
-.hero h1{
-background-color: #fff;
-color: #292929;
-font-size: larger;
-font-style: italic;
-font-family: monospace;
-}

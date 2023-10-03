@@ -1,19 +1,86 @@
 <%- include('partials/header') %>
     <link rel="stylesheet" href="/stylesheets/style.css">
-
- <section class="portfolio">
-    <h2>Portfolio</h2>
-    <div class="project">
-        <h3>Project 1</h3>
-        <p>Description of Project 1.</p>
-        <a href="project1.html">View Details</a>
-    </div>
-    <div class="project">
-        <h3>Project 2</h3>
-        <p>Description of Project 2.</p>
-        <a href="project2.html">View Details</a>
-    </div>
-    <!-- Add more projects as needed -->
-</section>
     
+    <link rel="stylesheet" href="/stylesheets/creative.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS for Carousel -->
+
+    <section class="about">
+      <div class="container">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Slides -->
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="/images/WEATHER.png" alt="Image 1">
+                      <div class="carousel-caption">
+                        <br>
+                        <br>
+                          
+                      </div>
+
+                      <h2>DV'S WEATHER </h2>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="/images/mobile pic 2.jpg" alt="Image 2">
+                      <div class="carousel-caption">
+                          <h2>Image 2</h2>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="image3.jpg" alt="Image 3">
+                      <div class="carousel-caption">
+                          <h2>Image 3</h2>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+              </a>
+          </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>.
+      
+    <section class="projects">
+      <div class="container">
+          <h2>Projects</h2>
+          <div class="project">
+              <img src="project1.jpg" alt="Project 1">
+              <div class="project-details">
+                  <h3>Project 1</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ante nec urna eleifend bibendum.</p>
+                  <a href="#" class="btn">Learn More</a>
+              </div>
+          </div>
+          <div class="project">
+              <img src="project2.jpg" alt="Project 2">
+              <div class="project-details">
+                  <h3>Project 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ante nec urna eleifend bibendum.</p>
+                  <a href="#" class="btn">Learn More</a>
+              </div>
+          </div>
+          <div class="project">
+              <img src="project3.jpg" alt="Project 3">
+              <div class="project-details">
+                  <h3>Project 3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ante nec urna eleifend bibendum.</p>
+                  <a href="#" class="btn">Learn More</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  
 <%- include('partials/footer') %>
