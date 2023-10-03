@@ -158,14 +158,14 @@ footer {
   }
 }
 .about {
-  background-color:black;
+  background-color:lightslategray;
   padding: 100px 0;
   text-align: center;
 }
 
 .about h2 {
   font-size: 36px;
-  color: lightblue;
+  color: #333;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-bottom: 30px;
   transform: translateX(50px); /* Initial X-axis translation for animation */
@@ -194,7 +194,7 @@ footer {
 
 .about-content p {
   font-size: 18px;
-  color: #666;
+  color: #333;
   max-width: 600px;
   margin: 0;
   transform: translateY(50px); /* Initial Y-axis translation for animation */
