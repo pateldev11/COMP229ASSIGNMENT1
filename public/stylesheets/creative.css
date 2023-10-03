@@ -1,7 +1,7 @@
 /* Existing styles for dark theme here */
 
 /* Projects section styles */
-.projects {
+/*.projects {
     background-color: #111;
     color: #fff;
     padding: 100px 0;
@@ -54,7 +54,44 @@
 
 .btn:hover {
     background-color: #ff5722;
+}*/
+
+/* Add 3D hover effect to project cards */
+.project {
+  perspective: 1000px; /* Set the perspective for 3D effect */
+  transition: transform 0.5s; /* Add a smooth transition effect */
 }
+
+.project:hover {
+  transform: rotateY(10deg) scale(1.1); /* Rotate and scale the card on hover */
+}
+
+/* Add styles for other elements as needed */
+
+/* Styling for project details */
+.project-details {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+/* Style the "Learn More" button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+
+/* Add any other styles you need for your website */
+
+/* Adjust other styles as needed for your specific design */
+
 
 
 /* Style the featurette section */
@@ -83,6 +120,7 @@
   }
   
   .featurette h2.featurette-heading {
+    font-family:'Trebuchet MS';
     font-size: 32px;
     margin: 20px 0;
     color:lightcoral; /* Change the text color to your preference */
@@ -113,28 +151,9 @@
     padding: 0;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color:lavender; /* Header background color */
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    border-radius: 75px;
-}
 
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333; /* Footer background color */
-    bottom: 0;
-    width: 100%;
-}
+
 
 /* Style the certifications section */
 .certifications {
@@ -229,6 +248,9 @@ justify-content: center;
   
   .experience-item h3,
   .education-item h3 {
+    font-family: 'Arial Narrow Bold';
+    font-style: oblique;
+    font-weight: bolder;
     color: lightcoral;
     font-size: 24px;
     margin-bottom: 10px;
@@ -264,13 +286,7 @@ justify-content: center;
   }
   
   /* Style the footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
+ 
   /* Responsive layout adjustments (optional) */
   @media (max-width: 768px) {
     .about img {
