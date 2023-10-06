@@ -1,0 +1,144 @@
+/* Apply 3D effect to the contact form container */
+.contact-container {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+/* Style the contact form with a 3D transformation */
+.contact-form-3d {
+  transform-style: preserve-3d;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transform: rotateX(15deg) rotateY(0deg) rotateZ(0deg);
+  transition: transform 0.3s ease;
+}
+
+/* Style form labels and inputs */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Apply the 3D effect on hover */
+.contact-form-3d:hover {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+/* Style the map container */
+.map-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style the social media links */
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #0056b3;
+}
+
+/* Style the newsletter signup */
+.newsletter-signup {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.newsletter-signup h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.newsletter-signup input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.newsletter-signup button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.newsletter-signup button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style the testimonials section */
+.testimonials {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.testimonials h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 18px;
+  color: #555;
+}
+
+.testimonial .cite {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #777;
+}
+
+/* Additional styling can be added as needed */

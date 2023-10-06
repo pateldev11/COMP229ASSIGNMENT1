@@ -1,65 +1,6 @@
-/* Existing styles for dark theme here */
-
-/* Projects section styles */
-/*.projects {
-    background-color: #111;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.projects h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.project {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.project img {
-    width: 300px;
-    height: 200px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
-}
-
-.project-details {
-    flex: 1;
-    padding: 20px;
-    text-align: left;
-}
-
-.project-details h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.project-details p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #ff5722;
-}*/
-
-/* Add 3D hover effect to project cards */
 .project {
   perspective: 1000px; /* Set the perspective for 3D effect */
-  transition: transform 0.5s; /* Add a smooth transition effect */
+  transition: transform ; /* Add a smooth transition effect */
 }
 
 .project:hover {
@@ -86,13 +27,6 @@
   text-decoration: none;
   transition: background-color 0.3s;
 }
-
-
-/* Add any other styles you need for your website */
-
-/* Adjust other styles as needed for your specific design */
-
-
 
 /* Style the featurette section */
 .featurette {
@@ -287,30 +221,4 @@ justify-content: center;
   
   /* Style the footer */
  
-  /* Responsive layout adjustments (optional) */
-  @media (max-width: 768px) {
-    .about img {
-      max-width: 80%;
-    }
   
-    .featurette h2 {
-      font-size: 28px;
-    }
-  
-    .skills h2 {
-      font-size: 28px;
-    }
-  
-    .experience-item h3,
-    .education-item h3 {
-      font-size: 20px;
-    }
-  
-    .testimonial blockquote {
-      font-size: 20px;
-    }
-  
-    .cite {
-      font-size: 16px;
-    }
-  }

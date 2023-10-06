@@ -209,17 +209,18 @@ footer p {
 
 .about-content {
   display: flex;
-  justify-content: center;
+
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.about-content img {
-  width: 550px;
-  height: 450px;
-  background-color: aliceblue;
+.about-content img{
+  width: 350px;
+  height: 350px;
+  background-image: aliceblue;
   border-radius: 25%;
-  margin-right: 30px;
+  margin-right: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   transform: translateY(50px); /* Initial Y-axis translation for animation */
   opacity: 0; /* Initial opacity for animation */
@@ -227,15 +228,29 @@ footer p {
 }
 
 .about-content p {
+  padding-top: 2%;
+  padding-bottom: 2%;
   font-size: 18px;
-  color: #333;
+  color: lightblue;
+  background-image: url('/images/brainy.gif');
   max-width: 600px;
   margin: 0;
+  border-radius: 20px;
   transform: translateY(50px); /* Initial Y-axis translation for animation */
   opacity: 0; /* Initial opacity for animation */
   animation: fadeInUp 1s ease 1s forwards;
 }
+.pdf a{
+  text-decoration: none;
+  color:gray ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
 
+}
+.pdf a:hover{
+  background-color: lightcoral;
+  color: brown;
+}
 /* Keyframes for animations */
 @keyframes slideIn {
   to {
@@ -248,6 +263,33 @@ footer p {
   to {
       transform: translateY(0);
       opacity: 1;
+  }
+}
+/* Responsive layout adjustments (optional) */
+@media (max-width: 960px) {
+  .about img {
+    max-width: 25%;
+  }
+
+  .featurette h2 {
+    font-size: 28px;
+  }
+
+  .skills h2 {
+    font-size: 28px;
+  }
+
+  .experience-item h3,
+  .education-item h3 {
+    font-size: 20px;
+  }
+
+  .testimonial blockquote {
+    font-size: 20px;
+  }
+
+  .cite {
+    font-size: 16px;
   }
 }
 
