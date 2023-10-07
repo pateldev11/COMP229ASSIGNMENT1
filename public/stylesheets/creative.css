@@ -1,32 +1,5 @@
-.project {
-  perspective: 1000px; /* Set the perspective for 3D effect */
-  transition: transform ; /* Add a smooth transition effect */
-}
 
-.project:hover {
-  transform: rotateY(10deg) scale(1.1); /* Rotate and scale the card on hover */
-}
 
-/* Add styles for other elements as needed */
-
-/* Styling for project details */
-.project-details {
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
-}
-
-/* Style the "Learn More" button */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
 
 /* Style the featurette section */
 .featurette {

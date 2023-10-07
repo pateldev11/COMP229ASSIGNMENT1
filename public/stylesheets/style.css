@@ -99,7 +99,7 @@ nav a:hover {
 
 .mission {
   background-color:black;
-  color: lightblue;
+  color: lavender;
   text-align: center;
   padding: 50px 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -108,13 +108,13 @@ nav a:hover {
 
 .mission h2 {
   font-size: 36px;
-  color: lightblue;
+  color: lavender;
   margin-bottom: 20px;
 }
 
 .mission p {
   font-size: 18px;
-  color: lightblue;
+  color: lavender;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -218,7 +218,7 @@ footer p {
 .about-content img{
   width: 350px;
   height: 350px;
-  background-image: aliceblue;
+  background-image: ;
   border-radius: 25%;
   margin-right: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);

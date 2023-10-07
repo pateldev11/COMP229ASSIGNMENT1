@@ -1,144 +1,182 @@
-/* Apply 3D effect to the contact form container */
-.contact-container {
-  perspective: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-}
 
-/* Style the contact form with a 3D transformation */
-.contact-form-3d {
-  transform-style: preserve-3d;
+/* Main content container with fade-in animation */
+.container {
+
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  background-color: #333;
+  color: lavenderblush;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  transform: rotateX(15deg) rotateY(0deg) rotateZ(0deg);
-  transition: transform 0.3s ease;
+  animation: fadeIn 1s ease-in;
 }
 
-/* Style form labels and inputs */
-.input-group {
+/* Contact form styles with slide-in animation */
+.contact-form {
+  margin-bottom: 30px;
+  animation: slideInLeft 1s ease-in;
+}
+
+.contact-form h2 {
+  font-size: 2em;
   margin-bottom: 20px;
 }
 
-.input-group label {
+.contact-form p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
   display: block;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.input-group input,
-.input-group textarea {
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
   width: 100%;
   padding: 10px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1.2em;
+  transition: border-color 0.3s ease;
 }
 
-/* Style the submit button */
-button[type="submit"] {
-  background-color: #007bff;
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #555;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: #333;
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button[type="submit"]:hover {
-  background-color: #0056b3;
+.contact-form button:hover {
+  background-color: #555;
+  transform: scale(1.05);
 }
 
-/* Apply the 3D effect on hover */
-.contact-form-3d:hover {
-  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+/* Contact information styles with fade-in animation */
+.contact-info {
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-in;
 }
 
-/* Style the map container */
-.map-container {
+.contact-info h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Footer styles with slide-in animation */
+footer {
   text-align: center;
-  margin-top: 20px;
-}
-
-/* Style the social media links */
-.social-media {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.social-media a {
-  display: inline-block;
-  margin: 0 10px;
-  font-size: 24px;
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.social-media a:hover {
-  color: #0056b3;
-}
-
-/* Style the newsletter signup */
-.newsletter-signup {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.newsletter-signup h3 {
-  font-size: 24px;
-  color: #333;
-}
-
-.newsletter-signup input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.newsletter-signup button[type="submit"] {
-  background-color: #007bff;
+  padding: 20px 0;
+  background-color: #333;
   color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
+  font-size: 1.2em;
+  animation: slideInUp 1s ease-in;
 }
 
-.newsletter-signup button[type="submit"]:hover {
-  background-color: #0056b3;
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
-/* Style the testimonials section */
-.testimonials {
-  text-align: center;
-  margin-top: 20px;
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
 }
 
-.testimonials h3 {
-  font-size: 24px;
-  color: #333;
+@keyframes slideInUp {
+  from {
+      transform: translateY(100%);
+  }
+  to {
+      transform: translateY(0);
+  }
 }
+#container{
+  margin:2.5%;
 
-.testimonial blockquote {
-  font-style: italic;
-  font-size: 18px;
-  color: #555;
+  color: lavenderblush;
 }
+.container1 {
 
-.testimonial .cite {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #777;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:lightcyan;
+  color: lavenderblush;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px ;
+  border: gray double 7px;
+  animation: fadeIn 1s ease-in;
 }
+.container2 {
 
-/* Additional styling can be added as needed */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:lightcoral;
+  color: lavenderblush;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in;
+}
+.container3 {
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:lightslategray;
+  color: lavenderblush;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in;
+}
+.container4 {
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:lightsalmon;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in;
+}
