@@ -57,8 +57,8 @@
 }
 
 .contact-form button {
-  background-color: #333;
-  color: #fff;
+  background-color: lavender;
+  color: lightslategray;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
@@ -68,7 +68,7 @@
 }
 
 .contact-form button:hover {
-  background-color: #555;
+  background-color:#333;
   transform: scale(1.05);
 }
 
@@ -93,15 +93,6 @@
   margin-bottom: 10px;
 }
 
-/* Footer styles with slide-in animation */
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #333;
-  color: #fff;
-  font-size: 1.2em;
-  animation: slideInUp 1s ease-in;
-}
 
 /* Keyframe animations */
 @keyframes fadeIn {

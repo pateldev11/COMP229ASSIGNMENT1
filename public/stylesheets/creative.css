@@ -166,12 +166,13 @@ justify-content: center;
   /* Style the testimonials section */
   #testimonials {
     background-color: lightslategray;
-    color:lightblue;
+    color:#333;
     padding: 40px 0;
   }
   
   #testimonials h2 {
     font-size: 36px;
+
     text-align: center;
     margin-bottom: 20px;
   }

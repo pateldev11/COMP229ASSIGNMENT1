@@ -55,6 +55,7 @@ body {
 }
 
 .service ul li {
+    color: #666;
     padding-left: 20px;
     background: url('/images/checkmark.png') no-repeat left center;
 }
