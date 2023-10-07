@@ -52,8 +52,8 @@ nav a {
 }
 
 nav a:hover {
-  color:orangered;
-  background-color: #f9f9f9; /* Change to your desired hover color */
+  color:lightcoral;
+  /* Change to your desired hover color */
 }
 
 .hero {
@@ -241,8 +241,8 @@ footer p {
 }
 .pdf a{
   text-decoration: none;
-  color:gray ;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:red ;
+  font-family: 'Lucida Grande';
   font-size: larger;
 
 }
@@ -283,14 +283,31 @@ footer p {
     font-size: 20px;
   }
 
-  .testimonial blockquote {
-    font-size: 20px;
-  }
-
-  .cite {
-    font-size: 16px;
-  }
+ 
 }
 
 
+/* Add animations to headings and text */
+.hero h1,
+.hero p,
+.mission h2,
+.mission p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 5s ease-in, slideIn 5s ease forwards;
+}
 
+/* Keyframes for animations */
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

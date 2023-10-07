@@ -163,36 +163,3 @@ justify-content: center;
     margin-bottom: 10px;
   }
   
-  /* Style the testimonials section */
-  #testimonials {
-    background-color: lightslategray;
-    color:#333;
-    padding: 40px 0;
-  }
-  
-  #testimonials h2 {
-    font-size: 36px;
-
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .testimonial {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  blockquote {
-    font-size: 24px;
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-  
-  cite {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  /* Style the footer */
- 
-  
