@@ -176,7 +176,7 @@ footer p {
 /* Adjust other styles as needed for your specific design */
 
 /* Media query for responsive design */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .hero {
       padding: 100px 0;
   }
